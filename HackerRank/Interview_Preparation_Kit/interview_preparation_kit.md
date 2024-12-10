@@ -2,7 +2,7 @@
 
 [Go to homepage](/README.md)
 
-[Go Up](/HackerRank/hackerrank.md)
+[Go Back](/HackerRank/hackerrank.md)
 
 ## Table of Contents
 
