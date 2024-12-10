@@ -1,6 +1,8 @@
 
 # Counting Valleys
 
+[Go Up](/HackerRank/Interview_Preparation_Kit/Warm_Up/warm_up.md)
+
 A hiker starts at sea level and records their path as a string of steps. Each step is either uphill (`U`) or downhill (`D`). A valley is a sequence of consecutive steps below sea level, starting with a step down and ending with a step up.
 
 ## Example

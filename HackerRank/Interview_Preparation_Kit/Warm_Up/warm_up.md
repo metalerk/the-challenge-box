@@ -1,5 +1,8 @@
 # Warm Up
 
+[Go to homepage](/README.md)
+[Go Up](/HackerRank/Interview_Preparation_Kit/interview_preparation_kit.md)
+
 ## Table of Contents
 
 1. [Sales by Match](/HackerRank/Interview_Preparation_Kit/Warm_Up/Sales_by_Match/)

@@ -1,5 +1,7 @@
 # Interview Preparation Kit
 
+[Go to homepage](/README.md)
+
 ## Table of Contents
 
 1. [Warm Up](/HackerRank/Interview_Preparation_Kit/Warm_Up/warm_up.md)
