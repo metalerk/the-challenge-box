@@ -1,4 +1,6 @@
-# Coding Challenges Repository
+# The Challenge Box
+
+![repository logo](/_assets/the_challenge_box_logo.jpg)
 
 This repository contains solutions to various coding challenges from platforms such as [HackerRank](https://www.hackerrank.com), [TestGorilla](https://www.testgorilla.com), and other technical interview preparation websites. Each solution is designed to be efficient, well-documented, and production-ready.
 
