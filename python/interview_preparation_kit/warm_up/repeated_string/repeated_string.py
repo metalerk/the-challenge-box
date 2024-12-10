@@ -1,16 +1,21 @@
 #!/bin/python3
+"""
+Repeated String Problem Solution
+--------------------------------
+
+This script provides a solution to the "Repeated String" problem, which calculates 
+how many times a specified character ('a') appears in the first n characters of 
+an infinitely repeating string.
+
+Author: Luis Esteban Rodriguez
+Email: rodriguezjluis0@gmail.com
+Github: https://github.com/metalerk
+"""
 
 import os
 import unittest
 
 from collections import Counter
-
-
-# The function is expected to return a LONG_INTEGER.
-# The function accepts following parameters:
-#  1. STRING s
-#  2. LONG_INTEGER n
-#
 
 
 def check_string_lenght(s: str) -> bool:
@@ -29,10 +34,10 @@ def check_string_lenght(s: str) -> bool:
 def check_number_of_chars(n: int) -> bool:
     """
     Ensures number of characters meets constraints.
-    
+
     Parameters:
     n (int): Number of characters.
-    
+
     Returns:
     bool: True if constraints are met. Otherwise, False.
     """
@@ -42,7 +47,7 @@ def check_number_of_chars(n: int) -> bool:
 def count_repetitions(s: str, n: int, math: bool = False) -> int:
     """
     Counts number of repeated a's.
-    
+
     Parameters:
     s (str): Text String.
     n (int): Number of characters.
@@ -92,7 +97,7 @@ def repeatedString(s: str, n: int) -> int:
 
     # no explanation needed here, is it?
     if len(s) == 1:
-        if s.lower() == 'a':
+        if s.lower() == "a":
             return n
         return 0
 
@@ -125,7 +130,7 @@ class RepeatedStringTestCase(unittest.TestCase):
         s = "abca"
         n = 3
         self.assertNotEqual(repeatedString(s, n), 8)
-    
+
     def test_very_large_number(self):
         s = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm"
         n = 736778906400
