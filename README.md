@@ -33,7 +33,7 @@ The repository is organized into folders based on the platform or source of the 
 ```
 
 ### Folder Descriptions
-- [**`HackerRank/`:**](/HackerRank/) Contains challenges and solutions from HackerRank, categorized by topic (e.g., Arrays, Strings).
+- [**`HackerRank/`:**](/HackerRank/hackerrank.md){: target="_blank"} Contains challenges and solutions from HackerRank, categorized by topic (e.g., Arrays, Strings).
 - **`TestGorilla/`:** Includes coding test solutions from TestGorilla.
 - **`OtherChallenges/`:** Placeholder for challenges from other platforms or sources.
 
