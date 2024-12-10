@@ -1,7 +1,7 @@
 
 # Sales by Match
 
-[Go Up](/HackerRank/Interview_Preparation_Kit/Warm_Up/warm_up.md)
+[Back](/HackerRank/Interview_Preparation_Kit/Warm_Up/warm_up.md)
 
 There is a collection of socks in various colors. Each sock is represented by an integer, identifying its color. Your task is to find the number of pairs of socks with matching colors.
 
