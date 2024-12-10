@@ -2,7 +2,7 @@
 
 [Go to homepage](/README.md)
 
-[Go Back](/HackerRank/Interview_Preparation_Kit/interview_preparation_kit.md)
+[Back](/HackerRank/Interview_Preparation_Kit/interview_preparation_kit.md)
 
 ## Table of Contents
 

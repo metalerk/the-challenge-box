@@ -1,6 +1,6 @@
 # Snakes and Ladders
 
-[Go Back](/OtherChallenges/other_challenges.md)
+[Back](/OtherChallenges/other_challenges.md)
 
 Snakes and Ladders is a classic board game where players navigate a series of numbered squares, starting at square 1 and aiming to reach the final square. Along the way, players may encounter ladders, which boost them forward, or snakes, which send them backward. Players progress by rolling a dice and moving the resulting number of squares.
 

@@ -1,7 +1,7 @@
 
 # Jumping on the Clouds
 
-[Go Back](/HackerRank/Interview_Preparation_Kit/Warm_Up/warm_up.md)
+[Back](/HackerRank/Interview_Preparation_Kit/Warm_Up/warm_up.md)
 
 There is a new mobile game that starts with consecutively numbered clouds. Some of the clouds are safe (represented by `0`) and others are not safe (represented by `1`). The player can jump from one cloud to another if the cloud is safe. The player must avoid landing on clouds with `1` and can jump to a cloud that is either one or two steps away.
 
