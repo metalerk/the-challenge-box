@@ -14,39 +14,70 @@ from collections import Counter
 
 
 def check_string_lenght(s: str) -> bool:
-    """ "Ensures string lenght meets constraints"""
+    """
+    Ensures string lenght meets constraints.
+
+    Parameters:
+    s (str): Text String.
+
+    Return:
+    bool: True if constraints are met. Otherwise, False.
+    """
     return True if len(s) > 0 and len(s) <= 100 else False
 
 
 def check_number_of_chars(n: int) -> bool:
-    """ "Ensures number of characters meets constraints"""
+    """
+    Ensures number of characters meets constraints.
+    
+    Parameters:
+    n (int): Number of characters.
+    
+    Returns:
+    bool: True if constraints are met. Otherwise, False.
+    """
     return True if n > 0 and n <= 10**12 else False
 
 
-def expand_string(s: str, n: int) -> str:
-    """Expands the string"""
-    if len(s) >= n:
-        return s
+def count_repetitions(s: str, n: int, math: bool = False) -> int:
+    """
+    Counts number of repeated a's.
+    
+    Parameters:
+    s (str): Text String.
+    n (int): Number of characters.
+    math (bool): Flag for mathematical calculation or generator count.
 
-    expanded_str = ""
-    while True:
-        for c in s:
-            if len(expanded_str) >= n:
-                return expanded_str
-            expanded_str += c
+    Returns:
+    int: Number os a's in s string.
+    """
+    if math:
+        str_len = len(s)
+        number_of_as = count_repetitions(s, 1)
+        ratio = n // str_len
+        remaining_letters = n % str_len
 
-
-def count_repetitions(s: str) -> int:
-    """Counts number of repeated a's"""
-    # Benchmarking with large numbers using list and generator
-    # showed no significant difference between both. However, for
-    # large number is a good practice to use generators since they
-    # retrieve itens on demand.
-    return Counter((c for c in s if c.lower() == "a"))["a"]
+        total = (number_of_as * ratio) + count_repetitions(s[:remaining_letters], 1)
+        return total
+    else:
+        # Benchmarking with large numbers using list and generator
+        # showed no significant difference between both. However, for
+        # large number is a good practice to use generators since they
+        # retrieve itens on demand.
+        return Counter((c for c in s if c.lower() == "a"))["a"]
 
 
 def repeatedString(s: str, n: int) -> int:
-    """Does the whole thing"""
+    """
+    Orchestrates the calculation.
+
+    Parameters:
+    s (str): Text String.
+    n (int): Number of characters.
+
+    Returns:
+    int: Number os a's in s string.
+    """
     # check types
     if not isinstance(s, str):
         raise ValueError(f"Invalid type {type(s)}: Must be str")
@@ -65,7 +96,7 @@ def repeatedString(s: str, n: int) -> int:
             return n
         return 0
 
-    return count_repetitions(expand_string(s, n))
+    return count_repetitions(s, n, math=True)
 
 
 class RepeatedStringTestCase(unittest.TestCase):
@@ -94,6 +125,11 @@ class RepeatedStringTestCase(unittest.TestCase):
         s = "abca"
         n = 3
         self.assertNotEqual(repeatedString(s, n), 8)
+    
+    def test_very_large_number(self):
+        s = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm"
+        n = 736778906400
+        self.assertEqual(repeatedString(s, n), 51574523448)
 
     def test_unmatched_constraints(self):
         """Test unmatched constraints"""
@@ -109,13 +145,12 @@ class RepeatedStringTestCase(unittest.TestCase):
 
 
 def main():
-    # unittest.main()
-    s = "x"
-    n = 970770
-    print(repeatedString(s, n))
+    """Main function."""
+    unittest.main()
 
 
 def run_hackerrank():
+    """Uses hackerrank execution parameters."""
     fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     s = input()
