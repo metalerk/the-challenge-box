@@ -4,15 +4,6 @@
 
 This repository contains solutions to various coding challenges from platforms such as [HackerRank](https://www.hackerrank.com), [TestGorilla](https://www.testgorilla.com), and other technical interview preparation websites. Each solution is designed to be efficient, well-documented, and production-ready.
 
-## About the Author
-
-**Luis Esteban Rodriguez**
-
-- 📧 **Email:** [rodriguezjluis0@gmail.com](mailto:rodriguezjluis0@gmail.com)  
-- 💻 **GitHub:** [github.com/metalerk](https://github.com/metalerk)
-
-Luis is a passionate software engineer with experience in backend development and a strong interest in solving algorithmic problems. This repository serves as a showcase of his problem-solving skills and dedication to continuous learning.
-
 ---
 
 ## Repository Structure
@@ -59,6 +50,17 @@ The repository is organized into folders based on the platform or source of the 
    ```bash
    python jumping_on_clouds.py
    ```
+
+---
+
+## About the Author
+
+**Luis Esteban Rodriguez**
+
+- 📧 **Email:** [rodriguezjluis0@gmail.com](mailto:rodriguezjluis0@gmail.com)  
+- 💻 **GitHub:** [github.com/metalerk](https://github.com/metalerk)
+
+Luis is a passionate software engineer with experience in backend development and a strong interest in solving algorithmic problems. This repository serves as a showcase of his problem-solving skills and dedication to continuous learning.
 
 ---
 
