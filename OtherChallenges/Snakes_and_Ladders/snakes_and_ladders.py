@@ -90,6 +90,10 @@ class GameBoard:
 
     def __init__(self, squares: int = 25):
         """Initialize the game board."""
+        if squares < 5 or squares > 100:
+            raise Exception(
+                f"Invalid parameter squares[{squares}]: Value must be within 5 to 100 range."
+            )
         self.squares = {x: None for x in range(squares)}
         self.last_square = squares
         self.current_position = 1
@@ -236,6 +240,18 @@ class SnakesAndLaddersTestCase(unittest.TestCase):
         # again, assert expected values match the mocked simulated rounds return value
         self.assertEqual(rounds, simulated_rounds)
         self.assertEqual(total, 2)
+
+    def test_gameboard_squares_boundaries(self):
+        """Test gameboard squares boundaries."""
+        # within
+        self.game = GameBoard(squares=5)
+        self.game = GameBoard(squares=100)
+
+        # without
+        with self.assertRaises(Exception):
+            self.game = GameBoard(squares=1)
+        with self.assertRaises(Exception):
+            self.game = GameBoard(squares=101)
 
 
 def main():
