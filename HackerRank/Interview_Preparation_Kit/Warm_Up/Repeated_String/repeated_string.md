@@ -1,6 +1,8 @@
 
 # Repeated String
 
+[Back](/HackerRank/Interview_Preparation_Kit/Warm_Up/warm_up.md)
+
 You have a string, `s`, and you want to determine how many times the letter `a` appears in the first `n` characters of the infinite repetition of the string.
 
 ## Example
