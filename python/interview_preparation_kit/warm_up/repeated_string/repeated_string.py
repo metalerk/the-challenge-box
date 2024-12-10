@@ -140,12 +140,12 @@ class RepeatedStringTestCase(unittest.TestCase):
         """Test unmatched constraints"""
         s = "abc" * 34
         n = 2
-        with self.assertRaises(ValueError) as ctx:
+        with self.assertRaises(ValueError):
             repeatedString(s, n)
 
         s = "abc"
         n = (10**12) + 1
-        with self.assertRaises(ValueError) as ctx:
+        with self.assertRaises(ValueError):
             repeatedString(s, n)
 
 
