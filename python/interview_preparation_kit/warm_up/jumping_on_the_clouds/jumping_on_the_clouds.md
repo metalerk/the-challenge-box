@@ -24,9 +24,25 @@ Output:
 ```
 
 Explanation:
+
+Index the array from `0...6`. The number on each cloud is its index in the list so the player must avoid the clouds at indices `1` and `5`. They could follow these two paths: 
+
 - Jump from index `0` to index `2`
 - Jump from index `2` to index `4`
 - Jump from index `4` to index `6`
+
+3 steps
+
+or 
+
+- Jump from index `0` to index `2`
+- Jump from index `2` to index `3`
+- Jump from index `3` to index `4`
+- Jump from index `4` to index `6`
+
+4 steps.
+
+First path must be returned.
 
 ### Constraints
 - \( 2 \leq n \leq 100 \)
@@ -36,6 +52,6 @@ Explanation:
 ### Function Signature
 Implement the function as follows:
 ```python
-def jumpingOnClouds(c):
-    # Your code here
+def jumping_on_clouds(c):
+    # code
 ```
