@@ -25,7 +25,6 @@ The repository is organized into folders based on the platform or source of the 
 
 ### Folder Descriptions
 - [**`HackerRank/`:**](/HackerRank/hackerrank.md){: target="_blank"} Contains challenges and solutions from HackerRank, categorized by topic (e.g., Arrays, Strings).
-- **`TestGorilla/`:** Includes coding test solutions from TestGorilla.
 - [**`OtherChallenges/`:**](/OtherChallenges/other_challenges.md) Challenges from other platforms, sources or custom.
 
 ---
