@@ -55,3 +55,7 @@ Implement the function as follows:
 def jumping_on_clouds(c):
     # code
 ```
+
+### Solution
+
+Proposed solution can be found [here](/HackerRank/Interview_Preparation_Kit/Warm_Up/Jumping_on_the_Clouds/jumping_on_the_clouds.py).

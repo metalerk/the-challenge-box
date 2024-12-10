@@ -31,3 +31,7 @@ Implement the function as follows:
 def repeatedString(s, n):
     # Your code here
 ```
+
+### Solution
+
+Proposed solution can be found [here](/HackerRank/Interview_Preparation_Kit/Warm_Up/Repeated_String/repeated_string.py).
